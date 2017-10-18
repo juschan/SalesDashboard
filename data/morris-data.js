@@ -3,59 +3,45 @@ $(function() {
     Morris.Area({
         element: 'morris-area-chart',
         data: [{
-            period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
+            period: 'Dec',
+            last: 103252,
+            current: 82520
         }, {
-            period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
+            period: 'Jan',
+            last: 103303,
+            current: 132035
         }, {
-            period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
+            period: 'Feb',
+            last: 144551,
+            current: 125432
         }, {
-            period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
+            period: 'Mar',
+            last: 144681,
+            current: 127941
         }, {
-            period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
+            period: 'Apr',
+            last: 144705,
+            current: 134338
         }, {
-            period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
+            period: 'May',
+            last: 166234,
+            current: 139764
         }, {
-            period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
+            period: 'Jun',
+            last: 216105,
+            current: 337476
         }, {
-            period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
+            period: 'Jul',
+            last: 216105,
+            current: 337476
         }, {
-            period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
-        }, {
-            period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
+            period: 'Aug',
+            last: 216105,
+            current: 337476
         }],
         xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+        ykeys: ['Last Financial Year', 'Current Financial Year'],
+        labels: ['Last Financial Year', 'Current Financial Year'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
@@ -64,14 +50,11 @@ $(function() {
     Morris.Donut({
         element: 'morris-donut-chart',
         data: [{
-            label: "Download Sales",
-            value: 12
+            label: "Team A Income ($)",
+            value: 37482
         }, {
-            label: "In-Store Sales",
-            value: 30
-        }, {
-            label: "Mail-Order Sales",
-            value: 20
+            label: "Team B Income ($)",
+            value: 110374
         }],
         resize: true
     });
